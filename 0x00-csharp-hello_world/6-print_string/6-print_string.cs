@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             string str = "Holberton School";
-            Console.WriteLine(str, 3);
+            Console.WriteLine(str + str + str);
             Console.WriteLine(str.Substring(0,8));
         }
     }
