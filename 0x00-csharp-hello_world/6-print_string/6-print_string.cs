@@ -6,6 +6,6 @@
         {
             string str = "Holberton School";
             Console.WriteLine(str + str + str);
-            Console.WriteLine(str.Substring(0,8));
+            Console.WriteLine(str.Substring(0,9));
         }
     }
