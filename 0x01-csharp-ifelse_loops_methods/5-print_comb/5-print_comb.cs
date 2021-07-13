@@ -10,6 +10,6 @@
                 Console.Write("{0:d2}, ", number);
                 number++;
             }
-            Console.Write("{0}", number);
+            Console.Write("{0}\n", number);
         }
     }
