@@ -6,7 +6,7 @@
         {
             string str1 = "Holberton";
             string str2 = "School";
-            String.Concat(str1, str2);
+            str1 = String.Concat(str1, " ", str2);
             Console.WriteLine("Welcome to {0}!", str1);
         }
     }
