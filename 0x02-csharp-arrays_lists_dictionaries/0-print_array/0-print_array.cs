@@ -16,7 +16,14 @@ class Array
         for (int x = 0; x < size; x++)
         {
             newArray[x] = x;
-            Console.Write(newArray[x] + " ");
+            if (x < size - 1)
+            {
+                Console.Write(newArray[x] + " ");
+            }
+            else
+            {
+                Console.Write(newArray[x]);
+            }
         }
         Console.WriteLine("");
         return (newArray);
