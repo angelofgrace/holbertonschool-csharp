@@ -10,7 +10,7 @@ class Array
             return;
         }
         int y = array.Length - 1;
-        for (int x = 0; x <= array.Length / 2; x++)
+        for (int x = 0; x < array.Length / 2; x++)
         {
             int tmp = array[x];
             array[x] = array[y];
