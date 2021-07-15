@@ -17,7 +17,7 @@ class MyStack
 
         // search for a needle in the haySTACK
         bool found = aStack.Contains(search);
-        Console.WriteLine("Stack contains {0}: {1}", search, found);
+        Console.WriteLine("Stack contains \"{0}\": {1}", search, found);
         if (found)
         {
             string check = "";
