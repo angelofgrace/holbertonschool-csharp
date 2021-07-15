@@ -13,10 +13,21 @@ class MyStack
         {
             Console.WriteLine("Stack is empty");
         }
+        else
+        {
         Console.WriteLine("Top item: {0}", aStack.Peek());
+        }
 
         // search for a needle in the haySTACK
-        bool found = aStack.Contains(search);
+        bool found;
+        if (aStack.Count == 0)
+        {
+            found = false;
+        }
+        else
+        {
+            found = aStack.Contains(search);
+        }
         Console.WriteLine("Stack contains \"{0}\": {1}", search, found);
         if (found)
         {
