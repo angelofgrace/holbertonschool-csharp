@@ -9,7 +9,7 @@ class MyStack
         Console.WriteLine("Number of items: {0}", aStack.Count);
 
         // look at the top card of your library
-        if (aStack.Count() == 0)
+        if (aStack.Count == 0)
         {
             Console.WriteLine("Stack is empty");
         }
