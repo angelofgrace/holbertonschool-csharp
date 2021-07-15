@@ -31,7 +31,7 @@ class MyQueue
         {
             found = aQueue.Contains(search);
         }
-        Console.WriteLine("Queue contains {0}: {1}", search, found);
+        Console.WriteLine("Queue contains \"{0}\": {1}", search, found);
 
         if (found)
         {
