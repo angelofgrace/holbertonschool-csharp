@@ -17,7 +17,7 @@ class LList
         {
             current = current.Next;
         }
-        if (current == myLList.First && current.Value < n)
+        if (current == myLList.First && current.Value > n)
         {
             myLList.AddFirst(n);
         }
