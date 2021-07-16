@@ -17,7 +17,14 @@ class LList
         {
             current = current.Next;
         }
-        myLList.AddAfter(current, n);
+        if (current == myLList.First)
+        {
+            myLList.AddFirst(n);
+        }
+        else
+        {
+            myLList.AddAfter(current, n);
+        }
         current = current.Next;
         return (current);
     }
