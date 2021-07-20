@@ -19,10 +19,10 @@ public struct Dog
 
     public override string ToString()
     {
-        return ("Dog Name: " + name.ToString() + "\n" +
-                "Age: " + age.ToString() + "\n" +
-                "Owner: " + owner.ToString() + "\n" +
-                "Rating: " + rating.ToString());
+        return ("Dog Name: " + name + "\n" +
+                "Age: " + age + "\n" +
+                "Owner: " + owner + "\n" +
+                "Rating: " + rating);
     }
     public string name;
     public float age;
