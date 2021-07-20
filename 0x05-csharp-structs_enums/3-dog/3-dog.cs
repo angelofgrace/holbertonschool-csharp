@@ -9,7 +9,7 @@ public enum Rating
 
 public struct Dog 
 {
-    public Dog(string Name = "", float Age = 0, string Owner = "", Rating Rating = Good)
+    public Dog(string Name = "", float Age = 0, string Owner = "", Rating Rating = "Good")
     {
         name = Name;
         age = Age;
