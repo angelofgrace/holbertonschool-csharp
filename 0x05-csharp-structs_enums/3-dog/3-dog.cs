@@ -24,8 +24,8 @@ public struct Dog
                 "Owner: " + owner.ToString() + "\n" +
                 "Rating: " + rating.ToString());
     }
-    public string name;
-    public float age;
-    public string owner;
-    public Rating rating;
+    public string name = "";
+    public float age = 0;
+    public string owner = "";
+    public Rating rating = Good;
 }
