@@ -37,7 +37,7 @@ namespace Enemies
         /// <summary> string override for clarity, incl all atrributes </summary>
         public override string ToString()
         {
-            return (String.Format("Zombie Name: {0} / Total Health: {1}", this.name, this.GetHealth));
+            return (String.Format("Zombie Name: {0} / Total Health: {1}", this.Name, this.GetHealth));
         }
 
     }
