@@ -11,7 +11,7 @@ namespace Enemies
         /// <summary> Do you know your enemy? </summary>
         public Zombie(int? value = 0)
         {
-            if (value < 0 || value.HasValue != false)
+            if (value < 0 || value.HasValue == false)
             {
                 throw new ArgumentException("Health must be greater than or equal to 0");
             }
