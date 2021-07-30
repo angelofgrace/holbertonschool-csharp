@@ -8,7 +8,7 @@ namespace Enemies
         /// <summary> Do you know your enemy? </summary>
         public Zombie(int health = 0)
         {
-            health = health;
+            this.health = health;
         }
         /// <summary> Health Points counter </summary>
         public int health;
