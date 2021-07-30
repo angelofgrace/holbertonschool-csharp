@@ -18,6 +18,7 @@ namespace Enemies
             this.health = value;
         }
 
+        /// <summary> Health Point count retriever </summary>
         public int GetHealth()
         {
             return this.health;
