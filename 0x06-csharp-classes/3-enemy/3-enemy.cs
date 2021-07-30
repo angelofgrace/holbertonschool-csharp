@@ -15,7 +15,7 @@ namespace Enemies
             {
                 throw new ArgumentException("Health must be greater than or equal to 0");
             }
-            this.health = value.GetValueOrDefault;
+            this.health = value.GetValueOrDefault();
         }
 
         /// <summary> Health Point count retriever </summary>
