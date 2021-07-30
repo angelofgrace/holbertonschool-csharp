@@ -9,9 +9,9 @@ namespace Enemies
         public int health;
         
         /// <summary> Do you know your enemy? </summary>
-        public Zombie(int health = 0)
+        public Zombie()
         {
-            this.health = health;
+            this.health = 0;
         }
 
     }
