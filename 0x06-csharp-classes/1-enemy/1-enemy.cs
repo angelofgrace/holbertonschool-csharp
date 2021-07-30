@@ -6,9 +6,9 @@ namespace Enemies
     public class Zombie
     {
         /// <summary> Do you know your enemy? </summary>
-        public Zombie(int health = 0)
+        public Zombie(int health)
         {
-            this.health = health;
+            this.health = 0;
         }
         /// <summary> Health Points counter </summary>
         public int health;
