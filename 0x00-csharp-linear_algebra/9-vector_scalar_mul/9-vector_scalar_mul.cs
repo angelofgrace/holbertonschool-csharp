@@ -15,9 +15,9 @@ class VectorMath
         }
         else if (vector.Length == 0)
         {
-            productVector = new double[1];
-            productVector[0] = -1;
-            return productVector;
+            double[] zeroVector = new double[1];
+            zeroVector[0] = -1;
+            return zeroVector;
         }
         for (int x = 0; x < vector.Length; x++)
         {
