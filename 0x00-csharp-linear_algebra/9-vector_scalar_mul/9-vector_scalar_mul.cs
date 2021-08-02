@@ -13,6 +13,12 @@ class VectorMath
             productVector[0] = -1;
             return productVector;
         }
+        else if (vector.Length == 0)
+        {
+            productVector = new double[1];
+            productVector[0] = -1;
+            return productVector;
+        }
         for (int x = 0; x < vector.Length; x++)
         {
             productVector[x] = vector[x] * scalar;
