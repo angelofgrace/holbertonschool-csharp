@@ -14,7 +14,7 @@ class VectorMath
         double[] sumVector = new double[l1];
         if (l1 > 3 || l1 < 2 || l2 > 3 || l2 < 2 || l1 != l2)
         {
-            sumVector.Add(-1);
+            sumVector[0] = -1;
             return (sumVector);
         }
         
