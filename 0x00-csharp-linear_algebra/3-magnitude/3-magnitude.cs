@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 
 class VectorMath
 {
     public static double Magnitude(double[] vector)
     {
-        int givenSides = 0;
-        if (vector.count < 2 || vector.count > 3)
+        double givenSides = 0;
+
+        if (vector.Length < 2 || vector.Length > 3)
         {
             return (-1);
         }
