@@ -15,7 +15,7 @@ class VectorMath
         {
             return (-1);
         }
-        list<double> products = new list<double>();
+        List<double> products = new List<double>();
         for (int x = 0; x < l1; x++)
         {
             products.Add(vector1[x] * vector2[x]);
