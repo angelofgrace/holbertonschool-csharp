@@ -8,17 +8,18 @@ class VectorMath
     public static double[] Multiply(double[] vector, double scalar)
     {
         double[] productVector = new double[vector.Length];
-        if (vector.Length > 3 || vector.Length < 2)
-        {
-            productVector[0] = -1;
-            return productVector;
-        }
-        else if (vector.Length == 0)
+        if (vector.Length == 0)
         {
             double[] zeroVector = new double[1];
             zeroVector[0] = -1;
             return zeroVector;
         }
+        else if (vector.Length > 3 || vector.Length < 2)
+        {
+            productVector[0] = -1;
+            return productVector;
+        }
+        
         for (int x = 0; x < vector.Length; x++)
         {
             productVector[x] = vector[x] * scalar;
