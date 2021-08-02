@@ -20,7 +20,7 @@ class VectorMath
         {
             products.Add(vector1[x] * vector2[x]);
         }
-        double result = products.Sum;
+        double result = Convert.ToDouble(products.Sum);
         return result;
     }
 }
