@@ -11,11 +11,13 @@ class VectorMath
         int l1, l2;
         l1 = vector1.Length;
         l2 = vector2.Length;
+        double[] sumVector = new double[l1];
         if (l1 > 3 || l1 < 2 || l2 > 3 || l2 < 2 || l1 != l2)
         {
-            return (-1);
+            sumVector.Add(-1);
+            return (sumVector);
         }
-        double[] sumVector = new double[l1];
+        
         for (int x = 0; x < l1; x++)
         {
             sumVector[x] = vector1[x] + vector2[x];
