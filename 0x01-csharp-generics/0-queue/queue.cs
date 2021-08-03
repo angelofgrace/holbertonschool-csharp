@@ -4,8 +4,8 @@
 class Queue<T>
 {
     /// <summary> returns the type of an object </summary>
-    public static Type CheckType()
+    public static Type CheckType(Queue<T> queue)
     {
-        return this.GetType();
+        return queue.GetType();
     }
 }
