@@ -10,7 +10,7 @@ class MatrixMath
         int l1, l2;
         l1 = matrix1.GetLength(0);
         l2 = matrix2.GetLength(0);
-        if (l1 != l2 || l1 == 0)
+        if (l1 != l2 || l1 == 0 || matrix1.GetLength(1) != matrix2.GetLength(1))
         {
             double[,] edgeMatrix = new double[1,1];
             edgeMatrix[0,0] = -1;
