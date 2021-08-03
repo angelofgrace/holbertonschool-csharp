@@ -12,8 +12,8 @@ class Queue<T>
     /// <summary> A node of a Linked List </summary>
     public class Node
     {
-        T value = default(T);
-        Node next = null;
+        public T value = default(T);
+        public Node next = null;
 
         public Node(T val = default(T))
         {
@@ -21,8 +21,8 @@ class Queue<T>
         }
     }
 
-    public Node head;
-    public Node tail;
+    public Node head = null;
+    public Node tail = null;
     public int count = 0;
 
     public void Enqueue(T val)
@@ -31,6 +31,12 @@ class Queue<T>
         if (count == 0)
         {
             head = newNode;
+            tail = newNode;
+        }
+        else
+        {
+            tail.next = newNode;
+            tail = newNode;
         }
         count += 1;
     }
