@@ -6,6 +6,6 @@ class Queue<T>
     /// <summary> returns the type of an object </summary>
     public Type CheckType()
     {
-        return this.GetType();
+        return typeof(T);
     }
 }
