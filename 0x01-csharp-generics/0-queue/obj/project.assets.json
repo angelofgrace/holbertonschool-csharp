@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\grace\\Desktop\\holbertonschool-csharp\\0x01-csharp-generics\\queue.cs\\queue.cs.csproj",
-      "projectName": "queue.cs",
-      "projectPath": "C:\\Users\\grace\\Desktop\\holbertonschool-csharp\\0x01-csharp-generics\\queue.cs\\queue.cs.csproj",
+      "projectUniqueName": "C:\\Users\\grace\\Desktop\\holbertonschool-csharp\\0x01-csharp-generics\\0-queue\\0-queue.csproj",
+      "projectName": "0-queue",
+      "projectPath": "C:\\Users\\grace\\Desktop\\holbertonschool-csharp\\0x01-csharp-generics\\0-queue\\0-queue.csproj",
       "packagesPath": "C:\\Users\\grace\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\grace\\Desktop\\holbertonschool-csharp\\0x01-csharp-generics\\queue.cs\\obj\\",
+      "outputPath": "C:\\Users\\grace\\Desktop\\holbertonschool-csharp\\0x01-csharp-generics\\0-queue\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
