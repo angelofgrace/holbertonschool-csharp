@@ -16,7 +16,7 @@ class MatrixMath
             edgeMatrix[0,0] = -1;
             return edgeMatrix;
         }
-        else if (matrix1.GetLength(1) > 3 || matrix1.GetLength(1) < 2 || matrix2.GetLength(1) < 2 || matrix2.GetLength(1) > 3)
+        else if (matrix1.GetLength(0) > 3 || matrix1.GetLength(0) < 2 || matrix2.GetLength(0) < 2 || matrix2.GetLength(0) > 3)
         {
             double[,] edgeMatrix = new double [1,1];
             edgeMatrix[0,0] = -1;
