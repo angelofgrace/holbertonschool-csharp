@@ -49,6 +49,7 @@ public abstract class Base
 /// <summary> Testing 1.. 2.. 3.. 4.. </summary>
 public class TestObject : Base
 {
+    /// <summary> can  you hear me now </summary>
     public TestObject() {}
 }
 
