@@ -92,7 +92,7 @@ class Queue<T>
         }
         else if (typeof(T) == String || typeof(T) == Char)
         {
-            string catStr = ""
+            string catStr = "";
             Node tmpNode = head;
             while (tmpNode.next != null)
             (
