@@ -21,14 +21,22 @@ public abstract class Base
     /// <summary> breakability indicator </summary>
     public interface IBreakable
     {
-        int durabilility;
+        int durabilility
+        {
+            get;
+            set;
+        }
         void Break();
     }
 
     /// <summary> collectibility indicator </summary>
     public interface ICollectable
     {
-        bool isCollected;
+        bool isCollected
+        {
+            get;
+            set;
+        }
         void Collect();
     }
 }
