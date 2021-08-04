@@ -90,7 +90,7 @@ class Queue<T>
             Console.WriteLine("Queue is empty");
             return null;
         }
-        else if (typeof(T) == string || typeof(T) == char)
+        else if (typeof(T) == String || typeof(T) == Char)
         {
             string catStr = ""
             Node tmpNode = head;
