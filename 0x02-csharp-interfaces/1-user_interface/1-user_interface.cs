@@ -25,8 +25,8 @@ public abstract class Base
         /// <summary> durability </summary>
         int durabilility
         {
-            get{}
-            set{}
+            get;
+            set;
         }
         /// <summary> breaking point </summary>
         void Break();
@@ -38,8 +38,8 @@ public abstract class Base
         /// <summary> some people got it </summary>
         bool isCollected
         {
-            get{}
-            set{}
+            get;
+            set;
         }
         /// <summary> do you got it </summary>
         void Collect();
