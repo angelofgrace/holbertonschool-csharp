@@ -15,28 +15,33 @@ public abstract class Base
     /// <summary> interactivity indicator </summary>
     public interface IInteractive
     {
+        /// <summary> method of interaction </summary>
         void Interact();
     }
 
     /// <summary> breakability indicator </summary>
     public interface IBreakable
     {
+        /// <summary> durability </summary>
         int durabilility
         {
             get;
             set;
         }
+        /// <summary> breaking point </summary>
         void Break();
     }
 
     /// <summary> collectibility indicator </summary>
     public interface ICollectable
     {
+        /// <summary> some people got it </summary>
         bool isCollected
         {
             get;
             set;
         }
+        /// <summary> do you got it </summary>
         void Collect();
     }
 }
