@@ -4,7 +4,11 @@
 public abstract class Base
 {
     /// <summary> defining title of an instance </summary>
-    public string name;
+    public string name
+    {
+        get;
+        set;
+    }
 
     /// <summary> basic ToString override </summary>
     public override string ToString()
