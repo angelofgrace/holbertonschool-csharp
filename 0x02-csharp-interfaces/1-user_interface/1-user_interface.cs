@@ -23,7 +23,7 @@ public abstract class Base
     public interface IBreakable
     {
         /// <summary> durability </summary>
-        public int durabilility
+        int durability
         {
             get;
             set;
@@ -36,7 +36,7 @@ public abstract class Base
     public interface ICollectable
     {
         /// <summary> some people got it </summary>
-        public bool isCollected
+        bool isCollected
         {
             get;
             set;
@@ -51,5 +51,12 @@ public class TestObject : Base
 {
     /// <summary> can  you hear me now </summary>
     public TestObject() {}
+
+    public int durability {get; set;}
+    public bool isCollected {get; set;}
+
+    public void Collect() {}
+    public void Break() {}
+    public void Interact() {}
 }
 
