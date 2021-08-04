@@ -54,7 +54,8 @@ public interface ICollectable
 public class Door: Base, IInteractive
 {
     /// <summary> build a door </summary>
-    public Door(string doorName)
+    /// INEFFICIENT CODE , HARD CODED "DOOR" SHOULD BE DYNAMIC
+    public Door(string doorName = "Door")
     {
        this.name = doorName;
     }
