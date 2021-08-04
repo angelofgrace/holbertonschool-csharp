@@ -95,10 +95,10 @@ class Queue<T>
             string catStr = "";
             Node tmpNode = head;
             while (tmpNode.next != null)
-            (
-                catStr = catStr + " " + tmpNode.value;
+            {
+                catStr = (catStr + " " + tmpNode.value);
                 tmpNode = tmpNode.next;
-            )
+            }
             catStr = catStr + " " + tail.value;
             return catStr;
         }
