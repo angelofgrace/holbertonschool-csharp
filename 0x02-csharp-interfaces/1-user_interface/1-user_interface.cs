@@ -52,11 +52,16 @@ public class TestObject : Base
     /// <summary> can  you hear me now </summary>
     public TestObject() {}
 
+    /// <summary> test </summary>
     public int durability {get; set;}
+    /// <summary> test </summary>
     public bool isCollected {get; set;}
 
+    /// <summary> test </summary>
     public void Collect() {}
+    /// <summary> test </summary>
     public void Break() {}
+    /// <summary> test </summary>
     public void Interact() {}
 }
 
