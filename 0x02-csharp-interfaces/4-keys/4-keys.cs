@@ -143,7 +143,7 @@ public class Key : Base, ICollectable
         if (isCollected == false)
         {
             isCollected = true;
-            Console.WriteLine("You pick up the {0}", name);
+            Console.WriteLine("You pick up the {0}.", name);
         }
         else
         {
