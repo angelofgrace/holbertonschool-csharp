@@ -110,7 +110,7 @@ public class Decoration : Base, IInteractive, IBreakable
         durability -= 1;
         if (durability > 0)
         {
-            Console.WriteLine("You hit the {0}. It cracks", name);
+            Console.WriteLine("You hit the {0}. It cracks.", name);
         }
         else if (durability == 0)
         {
