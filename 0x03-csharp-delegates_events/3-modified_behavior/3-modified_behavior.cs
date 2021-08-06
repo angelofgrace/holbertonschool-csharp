@@ -21,11 +21,16 @@ public class Player
     private string name;
     private float maxHp;
     private float hp;
+    private string status;
+
+    /// HP event delegate
+    public event EventHandler<CurrentHPArgs> HPCheck;
 
     /// each player gets one of these
     public Player(string name = "Player", float maxHp = 100f)
     {
         this.name = name;
+        this.status = (name + "is ready to go!");
         if (maxHp > 0)
         {
             this.maxHp = maxHp;
@@ -37,6 +42,7 @@ public class Player
             this.maxHp = 100f;
             this.hp = 100f;
         }
+        this.HPCheck += CheckStatus;
     }
 
     /// how much health does the player have?
@@ -85,6 +91,7 @@ public class Player
         {
             hp = newHp;
         }
+        HPCheck(this, new CurrentHPArgs(hp));
     }
 
     /// apply difficulty mod to monster
@@ -102,6 +109,44 @@ public class Player
         {
             return (float)(baseValue * 1.5);
         }
+    }
+
+    /// Event handler for HP events
+    private void CheckStatus(object sender, CurrentHPArgs e)
+    {
+        if (e.currentHp == maxHp)
+        {
+            Console.WriteLine(name + " is in perfect health!");
+        }
+        else if (e.currentHp >= (float)(maxHp * 0.5))
+        {
+            Console.WriteLine(name + " is doing well!");
+        }
+        else if (e.currentHp > (float)(maxHp * 0.25))
+        {
+            Console.WriteLine(name + " isn't doing too great...");
+        }
+        else if (e.currentHp > 0)
+        {
+            Console.WriteLine(name + " needs help!");
+        }
+        else
+        {
+            Console.WriteLine(name + " is knocked out!");
+        }
+    }
+}
+
+/// <summary> Event Sender for HP events </summary>
+public class CurrentHPArgs : EventArgs
+{
+    /// privately maniuplable hp value
+    public float currentHp {get; private set;}
+
+    /// constructor
+    public CurrentHPArgs(float newHp)
+    {
+        this.currentHp = newHp;
     }
 }
 
