@@ -122,7 +122,7 @@ public class Player
         {
             Console.WriteLine(name + " is doing well!");
         }
-        else if (e.currentHp > (float)(maxHp * 0.25))
+        else if (e.currentHp >= (float)(maxHp * 0.25))
         {
             Console.WriteLine(name + " isn't doing too great...");
         }
@@ -149,5 +149,3 @@ public class CurrentHPArgs : EventArgs
         this.currentHp = newHp;
     }
 }
-
-
