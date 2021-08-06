@@ -141,7 +141,7 @@ public class Player
 public class CurrentHPArgs : EventArgs
 {
     /// privately maniuplable hp value
-    public float currentHp {get; private set;}
+    public readonly float currentHp;
 
     /// constructor
     public CurrentHPArgs(float newHp)
